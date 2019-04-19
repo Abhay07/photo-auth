@@ -109,7 +109,7 @@
     var user = GoogleAuth.currentUser.get();
     var isAuthorized = user.hasGrantedScopes(SCOPE);
     if (isAuthorized) {
-      const token = user.getAuthResponse().access_token;
+      const token = 'http://ec2-18-219-109-248.us-east-2.compute.amazonaws.com:8082/upload?token='+user.getAuthResponse().access_token;
       $('#sign-in-or-out-button').hide();
       $('#label').show().html(token);
       // $('#revoke-access-button').css('display', 'inline-block');
