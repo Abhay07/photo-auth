@@ -1,5 +1,5 @@
 var GoogleAuth;
-  var SCOPE = 'https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/photoslibrary.appendonly';
+  var SCOPE = 'https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/photoslibrary.appendonly https://www.googleapis.com/auth/photoslibrary.readonly.appcreateddata';
   function handleClientLoad() {
     // Load the API's client and auth2 modules.
     // Call the initClient function after the modules load.
